@@ -1,7 +1,7 @@
 const server = require('http').createServer();
 const si = require('systeminformation');
 
-const io = require('socket.io')(server, {
+const io = require('socket.io')('https://pifappred.herokuapp.com/', {
     transports: ['websocket', 'polling']
 });
 
